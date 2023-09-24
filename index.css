@@ -1,0 +1,23 @@
+body{font-family: 'Montserrat', sans-serif;}
+.main {width: 100%; height: 800; background-image: url("main_background.jpeg"); background-repeat: no-repeat; padding-top: 1px;}
+/* .mai_img { display: block; margin-left: auto; margin-right: auto; padding-top: 10px;} */
+h1{color: #CE6A6C; font-size: 51px; text-align: center; padding-top: px; sans-serif; font-weight: 700; /* Bold */}
+h2{color: #49919D; text-align: center; font-size: 24px; width: 600px; padding-top: 0px; sans-serif; font-weight: 600; /* Semibold*/ }
+.main_image{padding-top: 0px; height: 600px; background-image: url("iphone_ipad.png");
+            background-repeat: no-repeat; background-position: center, top;
+            background-size: 600px}
+.kurs{width: 960px;
+  /* padding-top: 1px; */
+  margin:0 auto;
+
+  }
+/* .text1{z-index: 1; font-size: 100px}
+.text1-2{z-index: 100} */
+/* #overlay {
+    background-color: #EEEEEE;
+    position: absolute;
+    z-index:100;
+} */
+.title1{font-size: 100px; color: #49919D;}
+.info{background-color: #202E53; padding-top: 0px}
+h3{color: #CE6A6C; font-size: 51px; text-align: center;}
