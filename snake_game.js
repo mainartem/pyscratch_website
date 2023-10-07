@@ -24,7 +24,7 @@ var
 function loop()
 {
   // logic
-  ctx.fillStyle = 'black';
+  ctx.fillStyle = '#9c6';
   ctx.fillRect(0, 0, canv.width, canv.height);
 
   // force speed
@@ -45,10 +45,10 @@ function loop()
     {py = 0;}
 
   // paint the snake itself with the tail elements
-  ctx.fillStyle = 'lime';
+  ctx.fillStyle = '#36c';
   for( var i = 0; i < trail.length; i++ )
   {
-    ctx.fillStyle = trail[i].color || 'lime';
+    ctx.fillStyle = trail[i].color || '#36c';
     ctx.fillRect(trail[i].x, trail[i].y, pw, ph);
   }
 

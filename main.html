@@ -1,25 +1,21 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-    <style >
-      .container {
-      display: flex;
-      align-items: flex-start;
-  }
+<html>
+<head>
+  <title>Apartments in Moscow</title>
+</head>
+<body>
+  <h1>Number of apartments sold in Moscow:</h1>
+  <div id="numberOfApartments"></div>
 
-  .container .image {
-      margin-right: 10px;
-  }
-
-
-    </style>
-  </head>
-  <body>
-    <div class="container">
-    <img src="images\title_interfase.png" alt="Описание картинки" class="image"  style=" width: 250px; height: 500px; border-top-left-radius: 40px; border-bottom-left-radius: 40px; ">
-    <iframe src="https://example.com" class="iframe" style="float: right; width:1250px; height:500px; padding: 0px, 0px, 0px, 0px"></iframe>
-    </div>
-  </body>
+  <script>
+    fetch('https://api.example.com/apartments/moscow')
+      .then(response => response.json())
+      .then(data => {
+        document.getElementById('numberOfApartments').textContent = data.count;
+      })
+      .catch(error => {
+        console.error('Error:', error);
+      });
+  </script>
+</body>
 </html>
